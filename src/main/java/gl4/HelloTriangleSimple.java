@@ -78,10 +78,10 @@ public class HelloTriangleSimple implements GLEventListener, KeyListener {
 
         window = GLWindow.create(glCapabilities);
 
-        window.setTitle("Hello Triangle (enhanced)");
+        window.setTitle("fuck yourself");
         window.setSize(1024, 768);
 
-        window.setContextCreationFlags(GLContext.CTX_OPTION_DEBUG);
+        //window.setContextCreationFlags(GLContext.CTX_OPTION_DEBUG);
         window.setVisible(true);
 
         window.addGLEventListener(this);
@@ -102,7 +102,7 @@ public class HelloTriangleSimple implements GLEventListener, KeyListener {
 
     @Override
     public void init(GLAutoDrawable drawable) {
-
+        System.out.println("init");
         GL4 gl = drawable.getGL().getGL4();
 
         initDebug(gl);
